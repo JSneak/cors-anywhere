@@ -14,3 +14,5 @@ RUN npm install
 CMD ["npm", "start"]
 
 EXPOSE 8080
+
+RUN node server.js
