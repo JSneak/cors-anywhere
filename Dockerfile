@@ -11,8 +11,10 @@ COPY . /app
 RUN npm install
 
 # Define the entry point for the container
-CMD ["npm", "start"]
+
+
+ENV PORT 8080
 
 EXPOSE 8080
 
-RUN node server.js
+CMD ["node", "server.js"]
